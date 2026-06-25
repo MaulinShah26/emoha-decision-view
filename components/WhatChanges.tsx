@@ -1,33 +1,33 @@
 export default function WhatChanges() {
+  const blocks = [
+    {
+      label: "Business impact",
+      body: "Renewal rate as a tracked metric, not a year-end number. Saves attributed to specific recommended actions. Holdout-proven lift. Rupees retained against rupees at risk, every cycle.",
+    },
+    {
+      label: "Team impact",
+      body: "ERMs get a ranked work queue each morning, not a flat list of unhappy members. Doctors get clinically-triggered reviews on the highest-risk elders. Ops gets early flags on franchises quietly hurting renewal. HQ gets a portfolio view they can trust.",
+    },
+    {
+      label: "How it lands",
+      body: "Built on one slice first, say Comprehensive plan with NRI sponsors. Lift proven against a control group before the layer expands. No new tool for the team to learn. This sits on top of the work they already do.",
+    },
+  ];
+
   return (
     <section className="section border-t border-line">
-      <div className="mx-auto max-w-content px-6">
+      <div className="mx-auto max-w-wide px-6">
         <p className="eyebrow">07 · What changes for Emoha</p>
         <h2 className="mt-6 display title-underline inline-block">
-          [Section title]
+          What this means in practice
         </h2>
         <div className="mt-10 grid gap-8 md:grid-cols-3">
-          <div>
-            <p className="eyebrow">Business impact</p>
-            <p className="mt-3 text-md text-ink-muted">
-              [Renewal rate, ₹ retained, save attribution, holdout-proven
-              lift.]
-            </p>
-          </div>
-          <div>
-            <p className="eyebrow">Team impact</p>
-            <p className="mt-3 text-md text-ink-muted">
-              [ERM gets a work queue. Doctor gets clinical-triggered reviews.
-              Ops gets franchise quality flags. HQ gets portfolio visibility.]
-            </p>
-          </div>
-          <div>
-            <p className="eyebrow">How it lands</p>
-            <p className="mt-3 text-md text-ink-muted">
-              [One team, one cohort, one loop. Prove lift before scaling. No
-              new system to learn.]
-            </p>
-          </div>
+          {blocks.map((b) => (
+            <div key={b.label}>
+              <p className="eyebrow">{b.label}</p>
+              <p className="mt-4 text-md text-ink-muted">{b.body}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
