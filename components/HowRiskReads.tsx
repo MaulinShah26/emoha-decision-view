@@ -40,7 +40,7 @@ export default function HowRiskReads() {
           explained in a sentence the team trusts.
         </p>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2 max-w-[860px]">
+        <div className="mt-10 grid gap-8 md:grid-cols-2">
           <div>
             <p className="eyebrow">Risk rises when</p>
             <ul className="mt-4 space-y-2 text-md text-ink-muted">

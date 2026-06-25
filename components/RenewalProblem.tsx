@@ -6,9 +6,24 @@ export default function RenewalProblem() {
     { value: "~42%", label: "Cost going to staff" },
   ];
 
+  const points = [
+    {
+      label: "The math is unforgiving",
+      body: "Growth here is not a free win. Each new cohort either keeps renewing or quietly drops, and the unit economics are most sensitive to that.",
+    },
+    {
+      label: "The question is unavoidable",
+      body: "For each member, are they going to renew, and if not, what do we do about it. There is no version of running this business that skips this question.",
+    },
+    {
+      label: "Today, it lives nowhere",
+      body: "Right now this question lives in spreadsheets, hunches, and the gap between teams. No one owns it end to end.",
+    },
+  ];
+
   return (
     <section className="section border-t border-line">
-      <div className="mx-auto max-w-wide px-8 lg:px-12">
+      <div className="mx-auto max-w-content px-8 lg:px-12">
         <p className="eyebrow">01 · The renewal problem</p>
         <h2 className="mt-4 display title-underline inline-block">
           Where the money actually is
@@ -26,20 +41,13 @@ export default function RenewalProblem() {
           ))}
         </div>
 
-        <div className="mt-12 space-y-5 text-md text-ink-muted max-w-[680px]">
-          <p>
-            Growth here is not a free win. Each new cohort either keeps
-            renewing or quietly drops, and the unit economics are most
-            sensitive to that.
-          </p>
-          <p className="text-ink">
-            So the question is unavoidable. For each member, are they going
-            to renew, and if not, what do we do about it.
-          </p>
-          <p>
-            Right now this question lives in spreadsheets, hunches, and the
-            gap between teams. No one owns it end to end.
-          </p>
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
+          {points.map((p) => (
+            <div key={p.label}>
+              <p className="eyebrow">{p.label}</p>
+              <p className="mt-3 text-md text-ink-muted">{p.body}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
