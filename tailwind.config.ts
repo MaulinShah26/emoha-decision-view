@@ -35,8 +35,9 @@ const config: Config = {
         },
       },
       maxWidth: {
-        content: "880px",
-        wide: "1120px",
+        // Single page width used across all sections.
+        content: "1280px",
+        wide: "1280px", // alias retained so existing class names keep working
       },
       fontSize: {
         md: "var(--size-md)",

@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="pt-24 pb-20">
-      <div className="mx-auto max-w-content px-6">
+      <div className="mx-auto max-w-content px-8 lg:px-12">
         <span className="section-anchor" />
         <p className="eyebrow">For Emoha · prototype</p>
         <h1 className="mt-6 display-hero max-w-[780px]">

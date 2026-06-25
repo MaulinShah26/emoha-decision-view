@@ -1,7 +1,7 @@
 export default function DashboardVsQueue() {
   return (
     <section className="section border-t border-line">
-      <div className="mx-auto max-w-wide px-6">
+      <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">02 · Dashboard vs Decision queue</p>
         <h2 className="mt-6 display title-underline inline-block">
           Dashboards report. This decides.

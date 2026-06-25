@@ -1,7 +1,7 @@
 export default function Closing() {
   return (
     <section className="section border-t border-line">
-      <div className="mx-auto max-w-content px-6">
+      <div className="mx-auto max-w-content px-8 lg:px-12">
         <p className="display max-w-[680px]">
           Renewal compounds the business. This view is the decision surface
           that owns it.

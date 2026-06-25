@@ -8,7 +8,7 @@ export default function RenewalProblem() {
 
   return (
     <section className="section border-t border-line">
-      <div className="mx-auto max-w-wide px-6">
+      <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">01 · The renewal problem</p>
         <h2 className="mt-4 display title-underline inline-block">
           Where the money actually is

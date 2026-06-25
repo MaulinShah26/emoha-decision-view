@@ -1,7 +1,7 @@
 export default function HonestyFrame() {
   return (
     <footer className="section border-t border-line">
-      <div className="mx-auto max-w-content px-6">
+      <div className="mx-auto max-w-content px-8 lg:px-12">
         <p className="eyebrow">Note</p>
         <p className="mt-4 text-md text-ink-muted max-w-[680px]">
           Synthetic profiles · illustrative logic · not built on Emoha&apos;s
