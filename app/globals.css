@@ -22,9 +22,10 @@
   --band-low: 63 107 75;
   --band-low-bg: 220 232 222;
 
-  /* Type scale: TWO sizes only (still). Bumped for readability. */
+  /* Three sizes now: body, display, hero */
   --size-md: 16px;
   --size-lg: 28px;
+  --size-xl: 60px;
 }
 
 html, body {
@@ -37,17 +38,16 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
-/* Section spacing — reduced from 96 to 64 */
 .section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 720px) {
-  .section { padding-top: 48px; padding-bottom: 48px; }
+  .section { padding-top: 56px; padding-bottom: 56px; }
 }
 
-/* Eyebrow / label utility */
+/* Eyebrow / small label utility */
 .eyebrow {
   font-size: var(--size-md);
   font-weight: 500;
@@ -56,7 +56,7 @@ html, body {
   color: rgb(var(--ink-subtle));
 }
 
-/* Display heading */
+/* Display heading (section titles, card titles) */
 .display {
   font-size: var(--size-lg);
   font-weight: 500;
@@ -64,15 +64,18 @@ html, body {
   letter-spacing: -0.01em;
 }
 
-/* Hero gets weight emphasis, same size */
+/* Hero headline — the new third size, used only here */
 .display-hero {
-  font-size: var(--size-lg);
+  font-size: var(--size-xl);
   font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.015em;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
 }
 
-/* Title underline */
+@media (max-width: 720px) {
+  .display-hero { font-size: 40px; line-height: 1.1; }
+}
+
 .title-underline {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
@@ -80,11 +83,61 @@ html, body {
   text-decoration-color: rgb(var(--accent));
 }
 
-/* Section divider — a small accent block as visual anchor */
 .section-anchor {
   display: inline-block;
   width: 36px;
   height: 3px;
   background: rgb(var(--accent));
   margin-bottom: 24px;
+}
+
+/* --- Pill labels (scannable tags) --- */
+.pill {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  background: rgb(var(--accent-soft));
+  color: rgb(var(--accent));
+  font-size: var(--size-md);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.pill-outline {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--line));
+  background: transparent;
+  color: rgb(var(--ink-muted));
+  font-size: var(--size-md);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.pill-dark {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  background: rgb(var(--ink));
+  color: rgb(var(--page));
+  font-size: var(--size-md);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* --- Dark surface (for contrast cards) --- */
+.card-dark {
+  background: rgb(var(--ink));
+  color: rgb(var(--page));
+}
+
+.card-dark .eyebrow {
+  color: rgb(var(--accent-soft));
 }

@@ -26,47 +26,64 @@ export default function HowRiskReads() {
     },
   ];
 
+  const rises = [
+    { tag: "Utilization", body: "is low (paying for the plan, barely using it)" },
+    { tag: "Engagement", body: "Elder engagement is dropping" },
+    { tag: "Sponsor", body: "has stopped opening updates" },
+    { tag: "ERM contact", body: "last touch was a long time ago" },
+    { tag: "Complaints", body: "open issues or recent escalations" },
+    { tag: "Caregiver", body: "changed more than once recently" },
+    { tag: "Franchise", body: "serving them has a low quality score" },
+    { tag: "Renewal", body: "any of the above happens close to a renewal date" },
+  ];
+
+  const dampens = [
+    { tag: "NPS", body: "recent score is high" },
+    { tag: "Engagement", body: "steady on both sides" },
+    { tag: "Sponsor", body: "actively reading updates" },
+    { tag: "Recovery", body: "a recent issue was resolved well" },
+    { tag: "Cycle", body: "auto-renewal is on and the cycle has been clean" },
+  ];
+
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">05 · How risk gets read</p>
-        <h2 className="mt-6 display title-underline inline-block">
+        <h2 className="mt-4 display title-underline inline-block">
           How the score is built
         </h2>
         <p className="mt-6 text-md text-ink-muted max-w-[680px]">
           Risk for any one membership is built from observable signals
           across engagement, service use, experience, and the calendar.
-          The layer makes the logic legible, so every score can be
-          explained in a sentence the team trusts.
+          Every score is explainable in a sentence.
         </p>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid gap-10 lg:grid-cols-2">
           <div>
             <p className="eyebrow">Risk rises when</p>
-            <ul className="mt-4 space-y-2 text-md text-ink-muted">
-              <li>Utilization is low (paying for the plan, barely using it)</li>
-              <li>Elder engagement is dropping</li>
-              <li>The Sponsor has stopped opening updates</li>
-              <li>The last ERM contact was a long time ago</li>
-              <li>There are open complaints or recent escalations</li>
-              <li>The caregiver has changed more than once recently</li>
-              <li>The franchise serving them has a low quality score</li>
-              <li>Any of the above happens close to a renewal date</li>
+            <ul className="mt-5 space-y-3">
+              {rises.map((r) => (
+                <li key={r.tag} className="flex items-baseline gap-3 text-md text-ink-muted">
+                  <span className="pill shrink-0">{r.tag}</span>
+                  <span>{r.body}</span>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <p className="eyebrow">Risk dampens when</p>
-            <ul className="mt-4 space-y-2 text-md text-ink-muted">
-              <li>Recent NPS or CSAT is high</li>
-              <li>Engagement is steady on both sides</li>
-              <li>The Sponsor is actively reading updates</li>
-              <li>A recent issue was resolved well</li>
-              <li>Auto-renewal is on and the cycle has been clean</li>
+            <ul className="mt-5 space-y-3">
+              {dampens.map((d) => (
+                <li key={d.tag} className="flex items-baseline gap-3 text-md text-ink-muted">
+                  <span className="pill-outline shrink-0">{d.tag}</span>
+                  <span>{d.body}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <p className="mt-12 eyebrow">Four bands</p>
+        <p className="mt-14 eyebrow">Four bands</p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {bands.map((b) => (
             <div
@@ -82,8 +99,8 @@ export default function HowRiskReads() {
           ))}
         </div>
 
-        <div className="mt-12 max-w-[680px] text-md text-ink-muted space-y-4">
-          <p className="text-ink">
+        <div className="mt-12 max-w-[760px] text-md text-ink-muted space-y-3">
+          <p className="text-ink text-md font-medium">
             The queue ranks by Value-at-Risk times Risk, not raw risk.
           </p>
           <p>

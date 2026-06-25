@@ -77,27 +77,22 @@ export default function WhatThisLayerDoes() {
           mapping grows as the team adds patterns that work.
         </p>
 
-        <div className="mt-6 overflow-x-auto rounded-2xl border border-line bg-page">
-          <table className="w-full text-md text-left">
-            <thead>
-              <tr className="border-b border-line">
-                <th className="px-5 py-4 eyebrow w-1/4">Driver</th>
-                <th className="px-5 py-4 eyebrow w-2/5">Recommended action</th>
-                <th className="px-5 py-4 eyebrow w-1/5">Owner</th>
-                <th className="px-5 py-4 eyebrow w-[15%]">Channel</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-line">
-              {routingExamples.map((r) => (
-                <tr key={r.driver}>
-                  <td className="px-5 py-4 text-ink">{r.driver}</td>
-                  <td className="px-5 py-4 text-ink-muted">{r.action}</td>
-                  <td className="px-5 py-4 text-ink-muted">{r.owner}</td>
-                  <td className="px-5 py-4 text-ink-muted">{r.channel}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="mt-8 space-y-3">
+          {routingExamples.map((r) => (
+            <div
+              key={r.driver}
+              className="rounded-2xl border border-line bg-page p-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-6"
+            >
+              <div className="md:w-1/3 shrink-0">
+                <span className="pill">{r.driver}</span>
+              </div>
+              <p className="md:flex-1 text-md text-ink-muted">{r.action}</p>
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="pill-outline">{r.owner}</span>
+                <span className="pill-outline">{r.channel}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
