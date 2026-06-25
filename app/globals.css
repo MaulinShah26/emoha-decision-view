@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --- Design tokens (light) --- */
+  --page: 232 240 236;        /* #E8F0EC pale mint */
+  --surface: 244 249 246;     /* #F4F9F6 */
+  --ink: 28 36 32;            /* deep ink */
+  --ink-muted: 75 86 81;
+  --ink-subtle: 124 137 130;
+  --accent: 91 63 190;        /* #5B3FBE violet */
+  --accent-soft: 224 217 247; /* #E0D9F7 lavender */
+  --line: 200 212 206;
+
+  /* --- Type scale --- */
+  --size-sm: 11px;
+  --size-md: 14px;
+  --size-lg: 22px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: 15 30 34;          /* #0F1E22 */
+    --surface: 20 38 42;
+    --ink: 235 240 237;
+    --ink-muted: 175 186 181;
+    --ink-subtle: 124 137 130;
+    --accent: 217 180 80;      /* #D9B450 mustard */
+    --accent-soft: 70 60 25;
+    --line: 50 70 64;
+  }
+}
+
+html, body {
+  background: rgb(var(--page));
+  color: rgb(var(--ink));
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: var(--size-md);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Common section spacing --- */
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 720px) {
+  .section { padding-top: 64px; padding-bottom: 64px; }
+}
+
+/* --- Title underline (locked rule from Hosteller) --- */
+.title-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
