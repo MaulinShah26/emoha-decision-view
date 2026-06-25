@@ -9,8 +9,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
-        serif: ["var(--font-serif)", "ui-serif", "Georgia"],
-        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       colors: {
         page: "rgb(var(--page) / <alpha-value>)",
@@ -25,17 +23,24 @@ const config: Config = {
           soft: "rgb(var(--accent-soft) / <alpha-value>)",
         },
         line: "rgb(var(--line) / <alpha-value>)",
+        band: {
+          critical: "rgb(var(--band-critical) / <alpha-value>)",
+          "critical-bg": "rgb(var(--band-critical-bg) / <alpha-value>)",
+          high: "rgb(var(--band-high) / <alpha-value>)",
+          "high-bg": "rgb(var(--band-high-bg) / <alpha-value>)",
+          watch: "rgb(var(--band-watch) / <alpha-value>)",
+          "watch-bg": "rgb(var(--band-watch-bg) / <alpha-value>)",
+          low: "rgb(var(--band-low) / <alpha-value>)",
+          "low-bg": "rgb(var(--band-low-bg) / <alpha-value>)",
+        },
       },
       maxWidth: {
         content: "880px",
         wide: "1120px",
       },
       fontSize: {
-        sm: "var(--size-sm)",
         md: "var(--size-md)",
         lg: "var(--size-lg)",
-        xl: "var(--size-xl)",
-        "2xl": "var(--size-2xl)",
       },
     },
   },

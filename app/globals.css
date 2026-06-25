@@ -3,35 +3,29 @@
 @tailwind utilities;
 
 :root {
-  /* --- Design tokens (light) --- */
-  --page: 232 240 236;        /* #E8F0EC pale mint */
-  --surface: 244 249 246;     /* #F4F9F6 */
-  --ink: 28 36 32;            /* deep ink */
-  --ink-muted: 75 86 81;
-  --ink-subtle: 124 137 130;
-  --accent: 91 63 190;        /* #5B3FBE violet */
-  --accent-soft: 224 217 247; /* #E0D9F7 lavender */
-  --line: 200 212 206;
+  /* --- Design tokens (Emoha) --- */
+  --page: 248 244 237;        /* #F8F4ED warm cream */
+  --surface: 253 249 242;     /* #FDF9F2 lighter cream */
+  --ink: 31 26 20;            /* #1F1A14 deep warm charcoal */
+  --ink-muted: 80 71 60;
+  --ink-subtle: 138 126 110;
+  --accent: 15 91 91;         /* #0F5B5B deep teal */
+  --accent-soft: 220 237 234; /* pale teal */
+  --line: 226 216 198;        /* warm tan */
 
-  /* --- Type scale --- */
-  --size-sm: 11px;
+  /* Risk band colors (warmed) */
+  --band-critical: 181 59 37;   /* #B53B25 deep red-orange */
+  --band-critical-bg: 247 226 220;
+  --band-high: 177 120 33;      /* #B17821 amber */
+  --band-high-bg: 247 233 209;
+  --band-watch: 135 101 40;     /* #876528 ochre */
+  --band-watch-bg: 242 230 204;
+  --band-low: 63 107 75;        /* #3F6B4B forest green */
+  --band-low-bg: 220 232 222;
+
+  /* Type scale: TWO sizes only */
   --size-md: 14px;
   --size-lg: 22px;
-  --size-xl: 32px;
-  --size-2xl: 48px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page: 15 30 34;          /* #0F1E22 */
-    --surface: 20 38 42;
-    --ink: 235 240 237;
-    --ink-muted: 175 186 181;
-    --ink-subtle: 124 137 130;
-    --accent: 217 180 80;      /* #D9B450 mustard */
-    --accent-soft: 70 60 25;
-    --line: 50 70 64;
-  }
 }
 
 html, body {
@@ -41,9 +35,10 @@ html, body {
   font-size: var(--size-md);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* --- Common section spacing --- */
+/* --- Section spacing --- */
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -53,9 +48,27 @@ html, body {
   .section { padding-top: 64px; padding-bottom: 64px; }
 }
 
-/* --- Title underline (locked rule from Hosteller) --- */
+/* --- Eyebrow / label utility (same size as body, distinguished by style) --- */
+.eyebrow {
+  font-size: var(--size-md);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgb(var(--ink-subtle));
+}
+
+/* --- Display heading (the larger of our two sizes) --- */
+.display {
+  font-size: var(--size-lg);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+/* --- Title underline (locked rule) --- */
 .title-underline {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
+  text-decoration-color: rgb(var(--accent));
 }
