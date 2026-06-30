@@ -3,30 +3,30 @@ export default function RenewalProblem() {
     { value: "~40%", label: "Revenue growth, last reported year" },
     { value: "₹74 Cr", label: "Revenue scale" },
     { value: "₹1.5", label: "Spent to earn one rupee" },
-    { value: "~42%", label: "Cost going to staff" },
+    { value: "~42%", label: "Cost going to caregivers and staff" },
   ];
 
   const points = [
     {
-      label: "The math is unforgiving",
-      body: "Growth here is not a free win. Each new cohort either keeps renewing or quietly drops, and the unit economics are most sensitive to that.",
+      label: "The unit economics are upside down",
+      body: "Spending ₹1.5 to earn a rupee, with people as the single largest cost. This is a cost-to-serve problem before it is a growth problem.",
     },
     {
-      label: "The question is unavoidable",
-      body: "For each member, are they going to renew, and if not, what do we do about it. There is no version of running this business that skips this question.",
+      label: "Growth multiplies the leak",
+      body: "Every new franchise and cohort added on these economics loses more, not less, until the per-decision calls underneath get made well.",
     },
     {
-      label: "Today, it lives nowhere",
-      body: "Right now this question lives in spreadsheets, hunches, and the gap between teams. No one owns it end to end.",
+      label: "The decisions live nowhere",
+      body: "Who serves which elder, which franchise survives, why members actually leave. All made by hand, owned by no one end to end.",
     },
   ];
 
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-content px-8 lg:px-12">
-        <p className="eyebrow">01 · The renewal problem</p>
+        <p className="eyebrow">01 · The real constraint</p>
         <h2 className="mt-4 display title-underline inline-block">
-          Where the money actually is
+          Where the money actually leaks
         </h2>
 
         <div className="mt-10 grid gap-4 grid-cols-2 lg:grid-cols-4">
