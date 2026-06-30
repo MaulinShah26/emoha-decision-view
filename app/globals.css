@@ -4,28 +4,37 @@
 
 :root {
   /* --- Design tokens (Emoha) --- */
+  /* Three-colour system, 70:20:10
+     70 cream (page / surface)
+     20 deep teal (every piece of text + structure, never black)
+     10 teal accent (emphasis only) */
   --page: 248 244 237;
   --surface: 253 249 242;
-  --ink: 31 26 20;
-  --ink-muted: 80 71 60;
-  --ink-subtle: 138 126 110;
+
+  /* Text + titles: deep teal at three weights, no black, no grey */
+  --ink: 14 74 74;
+  --ink-muted: 40 84 84;
+  --ink-subtle: 96 128 128;
+
+  /* Accent: the 10 percent, emphasis only */
   --accent: 15 91 91;
   --accent-soft: 220 237 234;
-  --line: 226 216 198;
+  --line: 215 226 221;
 
-  --band-critical: 181 59 37;
-  --band-critical-bg: 247 226 220;
-  --band-high: 177 120 33;
-  --band-high-bg: 247 233 209;
-  --band-watch: 135 101 40;
-  --band-watch-bg: 242 230 204;
-  --band-low: 63 107 75;
-  --band-low-bg: 220 232 222;
+  /* Severity reads as one teal scale, not a rainbow */
+  --band-critical: 14 74 74;
+  --band-critical-bg: 210 227 223;
+  --band-high: 40 84 84;
+  --band-high-bg: 222 234 230;
+  --band-watch: 74 116 116;
+  --band-watch-bg: 232 240 237;
+  --band-low: 110 140 140;
+  --band-low-bg: 243 240 232;
 
-  /* Three sizes now: body, display, hero */
-  --size-md: 16px;
+  /* Sizes: body, display, hero */
+  --size-md: 17px;
   --size-lg: 28px;
-  --size-xl: 60px;
+  --size-xl: 46px;
 }
 
 html, body {
