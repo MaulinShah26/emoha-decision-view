@@ -2,7 +2,7 @@ export default function WhatThisLayerDoes() {
   const capabilities = [
     {
       title: "Ranks by where money actually is",
-      body: "Value-at-Risk times Risk, so the highest-value memberships in trouble surface first. The team spends time on saves that matter, not on whoever shouted last.",
+      body: "Value-at-Risk times Risk, so the highest-value memberships in trouble surface first. That keeps attention on the saves that matter most.",
     },
     {
       title: "Routes each member to the right owner",

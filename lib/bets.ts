@@ -42,7 +42,7 @@ export const decisionBets: Bet[] = [
     title:
       "Which caregiver goes to which elder, and how full each caregiver's week runs against their cost.",
     madeToday:
-      "Assigned by hand off a roster, balanced on memory and whoever happens to be free.",
+      "Every assignment trades off skill match, travel time, continuity, and how full each caregiver's week runs. Easy to do roughly, hard to do well across a whole roster.",
     question:
       "For each caregiver and each visit, is this the right match, and is the week full enough to pay for itself?",
     signals: [
@@ -99,7 +99,7 @@ export const decisionBets: Bet[] = [
       { label: "Acuity scoring on the care plan", readiness: "confirm" },
     ],
     whyRank:
-      "Sits directly on the 42% staff line that makes unit economics negative. Cleanest optimisation problem of the three, and the data is operational exhaust you cannot run payroll or dispatch without.",
+      "Sits directly on the 42% staff line, the largest cost in the business. Cleanest optimisation problem of the three, and it leans on the kind of data any people-heavy operation generates just by running payroll and dispatch.",
   },
   {
     id: "franchise",
@@ -108,7 +108,7 @@ export const decisionBets: Bet[] = [
     title:
       "Which franchises will fail early, where to open next, and where to spend support.",
     madeToday:
-      "Judged at head office on revenue alone, usually noticed after the franchise is already failing.",
+      "Revenue is a lagging signal, clear only once a franchise is already in trouble. The leading signs sit scattered across launch pace, hiring, and local demand.",
     question:
       "For each franchise, is it on a path to pay back, and what is the one move that changes that?",
     signals: [
@@ -129,7 +129,7 @@ export const decisionBets: Bet[] = [
       {
         unit: "Indore · week 7 · 0 paying members",
         read: "No demand traction and no head office contact in three weeks.",
-        action: "Intervene now or cut. On the path most new franchises close on.",
+        action: "Intervene now or cut. This is the trajectory that often ends in early closure.",
         owner: "Franchise success",
         flag: "act",
       },
@@ -164,7 +164,7 @@ export const decisionBets: Bet[] = [
       { label: "Local demand and density data", readiness: "confirm" },
     ],
     whyRank:
-      "The biggest cash and reputation bleed, with a large share of new franchises closing fast. Second only because part of the cause is head office support, which no model fixes, and the leading indicators are the least certain to already exist clean.",
+      "Potentially large cash and reputation exposure, since franchise survival is a known weak point in fast-expanding partner models. Second because part of the cause is operational support, which no model fixes alone, and the leading indicators are the least certain to already exist clean.",
   },
   {
     id: "retention",
@@ -173,7 +173,7 @@ export const decisionBets: Bet[] = [
     title:
       "Why members actually leave, traced back to the caregiver and franchise behind it.",
     madeToday:
-      "Noticed at renewal, when it is already too late, with no idea which caregiver or franchise caused it.",
+      "By renewal the decision is effectively made. The useful question comes earlier: what is driving each lapse, and which caregiver or franchise it traces back to.",
     question:
       "For each lapse, what caused it, and which caregiver or franchise does it point back to?",
     signals: [
@@ -230,6 +230,6 @@ export const decisionBets: Bet[] = [
       { label: "Reason-coded cancellations", readiness: "confirm" },
     ],
     whyRank:
-      "The data exists, so it passes the data test, but the winnable part is attribution, not a lapse score. The churn signal is already loud because the member is complaining. Its real output is fixing Bets 1 and 2, which is why it ranks third rather than first.",
+      "The data for this usually exists, so it passes the data test, but the winnable part is attribution, not a lapse score. By the time someone leaves, the cause has usually surfaced already; the value is tracing it back to a caregiver or franchise, which feeds Bets 1 and 2. That is why it ranks third rather than first.",
   },
 ];

@@ -21,7 +21,7 @@ export default function DashboardVsQueue() {
               <li>Answers &quot;what happened&quot;</li>
               <li>Looks for trends over time</li>
               <li>Opened once a week, mostly by leadership</li>
-              <li>The work it triggers is unclear and uneven</li>
+              <li>The work it triggers is left to whoever opens it</li>
             </ul>
           </div>
 

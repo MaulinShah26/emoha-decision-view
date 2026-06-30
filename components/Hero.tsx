@@ -6,12 +6,13 @@ export default function Hero() {
         <h1 className="mt-6 display-hero">
           Three decisions run this business.
           <br />
-          Every one is still made by hand.
+          Each one is a judgment call, made over and over.
         </h1>
         <p className="mt-6 text-md text-ink-muted">
           Which caregiver goes to which elder. Which franchise survives. Why
-          members actually leave. None of these is a dashboard. Each is a call
-          repeated every week, at a scale where instinct stops being enough.
+          members actually leave. None of these is a reporting problem. Each is
+          a judgment repeated across the network, the kind that gets harder to
+          make consistently as it grows.
         </p>
       </div>
     </section>

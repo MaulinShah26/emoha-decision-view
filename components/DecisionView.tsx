@@ -77,7 +77,7 @@ export default function DecisionView() {
           <div className="">
             <h3 className="display">{bet.title}</h3>
             <p className="mt-4 text-md text-ink-muted">
-              <span className="font-medium text-ink">Made today: </span>
+              <span className="font-medium text-ink">The hard part: </span>
               {bet.madeToday}
             </p>
             <div className="mt-5 rounded-xl bg-accent-soft px-5 py-4">

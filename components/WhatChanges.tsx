@@ -6,7 +6,7 @@ export default function WhatChanges() {
     },
     {
       label: "Team impact",
-      body: "ERMs get a ranked work queue each morning, not a flat list of unhappy members. Doctors get clinically-triggered reviews on the highest-risk elders. Ops gets early flags on franchises quietly hurting renewal. HQ gets a portfolio view they can trust.",
+      body: "ERMs get a ranked work queue each morning, sorted by where the value is. Doctors get clinically-triggered reviews on the highest-risk elders. Ops gets early flags on franchises that may be affecting renewal. HQ gets a portfolio view of where value is at risk.",
     },
     {
       label: "How it lands",

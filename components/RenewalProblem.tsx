@@ -9,15 +9,15 @@ export default function RenewalProblem() {
   const points = [
     {
       label: "The unit economics are upside down",
-      body: "Spending ₹1.5 to earn a rupee, with people as the single largest cost. This is a cost-to-serve problem before it is a growth problem.",
+      body: "Spending ₹1.5 to earn a rupee, with people as the largest cost. On the public numbers, this reads as a cost-to-serve problem before a growth problem.",
     },
     {
-      label: "Growth multiplies the leak",
-      body: "Every new franchise and cohort added on these economics loses more, not less, until the per-decision calls underneath get made well.",
+      label: "Growth raises the stakes",
+      body: "On these unit economics, every new franchise and cohort adds cost about as fast as revenue. Scale rewards getting the calls underneath right and punishes getting them wrong.",
     },
     {
-      label: "The decisions live nowhere",
-      body: "Who serves which elder, which franchise survives, why members actually leave. All made by hand, owned by no one end to end.",
+      label: "The decisions underneath",
+      body: "Who serves which elder, which franchise survives, why members actually leave. Each is easy to make in the moment and hard to make consistently at scale. That gap is where a decision layer earns its place.",
     },
   ];
 
