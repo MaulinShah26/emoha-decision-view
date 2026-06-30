@@ -52,7 +52,7 @@ export default function HowRiskReads() {
         <h2 className="mt-4 display title-underline inline-block">
           How the score is built
         </h2>
-        <p className="mt-6 text-md text-ink-muted max-w-[680px]">
+        <p className="mt-6 text-md text-ink-muted">
           Risk for any one membership is built from observable signals
           across engagement, service use, experience, and the calendar.
           Every score is explainable in a sentence.
@@ -99,7 +99,7 @@ export default function HowRiskReads() {
           ))}
         </div>
 
-        <div className="mt-12 max-w-[760px] text-md text-ink-muted space-y-3">
+        <div className="mt-12 text-md text-ink-muted space-y-3">
           <p className="text-ink text-md font-medium">
             The queue ranks by Value-at-Risk times Risk, not raw risk.
           </p>

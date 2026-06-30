@@ -26,14 +26,14 @@ export default function DecisionView() {
         <h2 className="mt-6 display title-underline inline-block">
           Three decisions, ranked from outside
         </h2>
-        <p className="mt-6 text-md text-ink-muted max-w-[720px]">
+        <p className="mt-6 text-md text-ink-muted">
           Not a finished dashboard. This is where I would point the decision
           layer first, second, and third, and how each call resolves down to
           the single caregiver, franchise, or member it is about.
         </p>
 
         {/* Honesty frame */}
-        <div className="mt-8 rounded-2xl border border-line bg-page px-5 py-4 max-w-[720px]">
+        <div className="mt-8 rounded-2xl border border-line bg-page px-5 py-4">
           <p className="text-md text-ink-muted">
             <span className="font-medium text-ink">Read this honestly.</span>{" "}
             The order is my bet, made on public numbers and how the business
@@ -74,7 +74,7 @@ export default function DecisionView() {
         {/* Selected bet */}
         <div className="mt-10">
           {/* Decision + how it's made today */}
-          <div className="max-w-[820px]">
+          <div className="">
             <h3 className="display">{bet.title}</h3>
             <p className="mt-4 text-md text-ink-muted">
               <span className="font-medium text-ink">Made today: </span>
@@ -179,7 +179,7 @@ export default function DecisionView() {
           </div>
 
           {/* Why this rank */}
-          <div className="mt-6 border-l-2 border-accent pl-5 max-w-[820px]">
+          <div className="mt-6 border-l-2 border-accent pl-5">
             <p className="eyebrow">Why it ranks {bet.tag.toLowerCase()}</p>
             <p className="mt-2 text-md text-ink-muted">{bet.whyRank}</p>
           </div>

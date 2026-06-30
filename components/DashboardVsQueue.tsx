@@ -6,7 +6,7 @@ export default function DashboardVsQueue() {
         <h2 className="mt-4 display title-underline inline-block">
           Dashboards report. This decides.
         </h2>
-        <p className="mt-6 text-md text-ink-muted max-w-[680px]">
+        <p className="mt-6 text-md text-ink-muted">
           Most retention tooling is a dashboard. A decision queue is a
           different surface, built for a different question.
         </p>

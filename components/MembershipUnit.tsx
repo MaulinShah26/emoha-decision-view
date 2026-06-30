@@ -7,7 +7,7 @@ export default function MembershipUnit() {
           Every membership is two people
         </h2>
 
-        <p className="mt-8 text-md text-ink-muted max-w-[680px]">
+        <p className="mt-8 text-md text-ink-muted">
           In most subscription businesses, the customer is one person.
           Here it is two, and the renewal decision splits between them.
         </p>
@@ -56,7 +56,7 @@ export default function MembershipUnit() {
           </div>
         </div>
 
-        <p className="mt-12 text-md text-ink max-w-[680px]">
+        <p className="mt-12 text-md text-ink">
           A Sponsor who has stopped opening updates is as strong a churn
           signal as an Elder who has stopped engaging. Most churn models
           miss this because they look at one person. This view does not.

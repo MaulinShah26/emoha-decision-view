@@ -52,7 +52,7 @@ export default function WhatThisLayerDoes() {
         <h2 className="mt-6 display title-underline inline-block">
           Four jobs, one surface
         </h2>
-        <p className="mt-6 text-md text-ink-muted max-w-[680px]">
+        <p className="mt-6 text-md text-ink-muted">
           The layer does a small number of things, and does them well. None of
           them are new ideas. What is new is them living together, on one
           surface, owned end to end.
@@ -71,7 +71,7 @@ export default function WhatThisLayerDoes() {
         </div>
 
         <p className="mt-14 eyebrow">What the routing looks like</p>
-        <p className="mt-3 text-md text-ink-muted max-w-[680px]">
+        <p className="mt-3 text-md text-ink-muted">
           For each driver, the layer maps to a specific recommended action,
           owner, and channel. A few illustrative examples below. The full
           mapping grows as the team adds patterns that work.
