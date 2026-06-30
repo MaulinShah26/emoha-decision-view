@@ -1,3 +1,4 @@
+import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import RenewalProblem from "@/components/RenewalProblem";
 import DashboardVsQueue from "@/components/DashboardVsQueue";
@@ -13,15 +14,26 @@ import HonestyFrame from "@/components/HonestyFrame";
 export default function Page() {
   return (
     <main>
-      <Hero />
-      <RenewalProblem />
+      <Nav />
+      <div id="top">
+        <Hero />
+      </div>
+      <div id="constraint" className="scroll-mt-14">
+        <RenewalProblem />
+      </div>
       <DashboardVsQueue />
-      <MembershipUnit />
+      <div id="unit" className="scroll-mt-14">
+        <MembershipUnit />
+      </div>
       <Banner />
-      <DecisionView />
+      <div id="bets" className="scroll-mt-14">
+        <DecisionView />
+      </div>
       <HowRiskReads />
       <WhatThisLayerDoes />
-      <WhatChanges />
+      <div id="changes" className="scroll-mt-14">
+        <WhatChanges />
+      </div>
       <Closing />
       <HonestyFrame />
     </main>

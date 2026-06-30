@@ -41,6 +41,20 @@ export default function RenewalProblem() {
           ))}
         </div>
 
+        <p className="mt-4 text-[13px] text-ink-subtle">
+          FY25 figures, provisional pending official filing. From company
+          filings as reported by{" "}
+          <a
+            href="https://entrackr.com/exclusive/exclusive-eldercare-platform-emoha-reports-rs-7435-cr-revenue-in-fy25-cuts-losses-by-32-9986550"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent underline underline-offset-2"
+          >
+            Entrackr
+          </a>
+          , Sep 2025.
+        </p>
+
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {points.map((p) => (
             <div key={p.label}>

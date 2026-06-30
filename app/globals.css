@@ -43,6 +43,7 @@ html, body {
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: var(--size-md);
   line-height: 1.6;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -150,3 +151,7 @@ html, body {
 .card-dark .eyebrow {
   color: rgb(var(--accent-soft));
 }
+
+/* Hide the scrollbar on the nav's horizontal overflow (mobile) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
