@@ -18,10 +18,10 @@ export default function WhatChanges() {
     <section className="section border-t border-line">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">07 · What changes for Emoha</p>
-        <h2 className="mt-6 display title-underline inline-block">
+        <h2 className="mt-5 display title-underline inline-block">
           What this means in practice
         </h2>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-7 grid gap-6 md:grid-cols-3">
           {blocks.map((b) => (
             <div key={b.label}>
               <p className="eyebrow">{b.label}</p>

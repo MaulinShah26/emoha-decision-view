@@ -29,11 +29,11 @@ export default function RenewalProblem() {
           Where the money actually leaks
         </h2>
 
-        <div className="mt-10 grid gap-4 grid-cols-2 lg:grid-cols-4">
+        <div className="mt-7 grid gap-4 grid-cols-2 lg:grid-cols-4">
           {stats.map((s) => (
             <div
               key={s.label}
-              className="rounded-2xl border border-line bg-page p-6"
+              className="rounded-2xl border border-line bg-page p-5"
             >
               <p className="display text-accent">{s.value}</p>
               <p className="mt-3 text-md text-ink-muted">{s.label}</p>
@@ -41,7 +41,7 @@ export default function RenewalProblem() {
           ))}
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
           {points.map((p) => (
             <div key={p.label}>
               <p className="eyebrow">{p.label}</p>

@@ -52,13 +52,13 @@ export default function HowRiskReads() {
         <h2 className="mt-4 display title-underline inline-block">
           How the score is built
         </h2>
-        <p className="mt-6 text-md text-ink-muted">
+        <p className="mt-5 text-md text-ink-muted">
           Risk for any one membership is built from observable signals
           across engagement, service use, experience, and the calendar.
           Every score is explainable in a sentence.
         </p>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-2">
+        <div className="mt-8 grid gap-7 lg:grid-cols-2">
           <div>
             <p className="eyebrow">Risk rises when</p>
             <ul className="mt-5 space-y-3">
@@ -83,7 +83,7 @@ export default function HowRiskReads() {
           </div>
         </div>
 
-        <p className="mt-14 eyebrow">Four bands</p>
+        <p className="mt-9 eyebrow">Four bands</p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {bands.map((b) => (
             <div
@@ -99,7 +99,7 @@ export default function HowRiskReads() {
           ))}
         </div>
 
-        <div className="mt-12 text-md text-ink-muted space-y-3">
+        <div className="mt-8 text-md text-ink-muted space-y-3">
           <p className="text-ink text-md font-medium">
             The queue ranks by Value-at-Risk times Risk, not raw risk.
           </p>

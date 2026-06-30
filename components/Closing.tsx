@@ -2,7 +2,7 @@ export default function Closing() {
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-content px-8 lg:px-12">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-end">
+        <div className="grid gap-7 lg:grid-cols-[1.2fr_1fr] lg:items-end">
           <p className="display">
             These decisions compound the business. This view is one way to start
             owning them deliberately.

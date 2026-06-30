@@ -7,15 +7,15 @@ export default function MembershipUnit() {
           Every membership is two people
         </h2>
 
-        <p className="mt-8 text-md text-ink-muted">
+        <p className="mt-6 text-md text-ink-muted">
           In most subscription businesses, the customer is one person.
           Here it is two, and the renewal decision splits between them.
         </p>
 
         {/* Visual: Elder + Sponsor split with Membership in the middle */}
-        <div className="mt-12 grid gap-6 md:grid-cols-[1fr_auto_1fr] items-stretch">
+        <div className="mt-8 grid gap-5 md:grid-cols-[1fr_auto_1fr] items-stretch">
           {/* Elder card */}
-          <div className="rounded-2xl border border-line bg-page p-6">
+          <div className="rounded-2xl border border-line bg-page p-5">
             <p className="eyebrow">The Elder</p>
             <p className="mt-3 text-md text-ink">Lives the service every day</p>
             <div className="mt-5 pt-4 border-t border-line space-y-2">
@@ -31,15 +31,15 @@ export default function MembershipUnit() {
 
           {/* Middle connector */}
           <div className="flex md:flex-col items-center justify-center gap-3">
-            <div className="hidden md:block h-12 w-px bg-line" />
+            <div className="hidden md:block h-8 w-px bg-line" />
             <div className="rounded-full border border-accent bg-accent text-page px-5 py-3 text-md uppercase tracking-[0.12em] font-medium whitespace-nowrap">
               One Membership
             </div>
-            <div className="hidden md:block h-12 w-px bg-line" />
+            <div className="hidden md:block h-8 w-px bg-line" />
           </div>
 
           {/* Sponsor card */}
-          <div className="rounded-2xl border border-line bg-page p-6">
+          <div className="rounded-2xl border border-line bg-page p-5">
             <p className="eyebrow">The Sponsor</p>
             <p className="mt-3 text-md text-ink">
               Pays for it, decides if it continues. Often abroad.
@@ -56,7 +56,7 @@ export default function MembershipUnit() {
           </div>
         </div>
 
-        <p className="mt-12 text-md text-ink">
+        <p className="mt-8 text-md text-ink">
           A Sponsor who has stopped opening updates is as strong a churn
           signal as an Elder who has stopped engaging. Most churn models
           miss this because they look at one person. This view does not.

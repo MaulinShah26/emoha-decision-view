@@ -23,17 +23,17 @@ export default function DecisionView() {
     <section className="section border-t border-line bg-surface">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">04 · The decision layer · ranked</p>
-        <h2 className="mt-6 display title-underline inline-block">
+        <h2 className="mt-5 display title-underline inline-block">
           Three decisions, ranked from outside
         </h2>
-        <p className="mt-6 text-md text-ink-muted">
+        <p className="mt-5 text-md text-ink-muted">
           Not a finished dashboard. This is where I would point the decision
           layer first, second, and third, and how each call resolves down to
           the single caregiver, franchise, or member it is about.
         </p>
 
         {/* Honesty frame */}
-        <div className="mt-8 rounded-2xl border border-line bg-page px-5 py-4">
+        <div className="mt-6 rounded-2xl border border-line bg-page px-5 py-4">
           <p className="text-md text-ink-muted">
             <span className="font-medium text-ink">Read this honestly.</span>{" "}
             The order is my bet, made on public numbers and how the business
@@ -44,7 +44,7 @@ export default function DecisionView() {
         </div>
 
         {/* Bet toggle — the ranking is always visible */}
-        <div className="mt-10 flex flex-col sm:flex-row gap-3">
+        <div className="mt-7 flex flex-col sm:flex-row gap-3">
           {decisionBets.map((b) => {
             const active = b.id === activeId;
             return (
@@ -72,7 +72,7 @@ export default function DecisionView() {
         </div>
 
         {/* Selected bet */}
-        <div className="mt-10">
+        <div className="mt-7">
           {/* Decision + how it's made today */}
           <div className="">
             <h3 className="display">{bet.title}</h3>
@@ -89,8 +89,8 @@ export default function DecisionView() {
           </div>
 
           {/* Signals + Logic */}
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-line bg-page p-6">
+          <div className="mt-7 grid gap-5 lg:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-page p-5">
               <p className="eyebrow">Signals in</p>
               <ul className="mt-4 space-y-2">
                 {bet.signals.map((s) => (
@@ -101,7 +101,7 @@ export default function DecisionView() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl border border-line bg-page p-6">
+            <div className="rounded-2xl border border-line bg-page p-5">
               <p className="eyebrow">How it decides</p>
               <ul className="mt-4 space-y-2">
                 {bet.logic.map((s) => (
@@ -115,7 +115,7 @@ export default function DecisionView() {
           </div>
 
           {/* Ranked actions */}
-          <div className="mt-6 rounded-2xl border border-line bg-page overflow-hidden">
+          <div className="mt-5 rounded-2xl border border-line bg-page overflow-hidden">
             <div className="px-6 py-4 border-b border-line">
               <p className="eyebrow">
                 What it outputs · ranked, per unit
@@ -155,8 +155,8 @@ export default function DecisionView() {
           </div>
 
           {/* Data readiness */}
-          <div className="mt-6 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-line bg-page p-6">
+          <div className="mt-5 grid gap-5 lg:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-page p-5">
               <p className="eyebrow">Almost certainly in your systems</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {have.map((d) => (
@@ -166,7 +166,7 @@ export default function DecisionView() {
                 ))}
               </div>
             </div>
-            <div className="rounded-2xl border border-line bg-page p-6">
+            <div className="rounded-2xl border border-line bg-page p-5">
               <p className="eyebrow">We would confirm together</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {confirm.map((d) => (
@@ -179,7 +179,7 @@ export default function DecisionView() {
           </div>
 
           {/* Why this rank */}
-          <div className="mt-6 border-l-2 border-accent pl-5">
+          <div className="mt-5 border-l-2 border-accent pl-5">
             <p className="eyebrow">Why it ranks {bet.tag.toLowerCase()}</p>
             <p className="mt-2 text-md text-ink-muted">{bet.whyRank}</p>
           </div>

@@ -1,7 +1,7 @@
 export default function Banner() {
   return (
     <section className="bg-accent text-page">
-      <div className="mx-auto max-w-wide px-8 lg:px-12 py-10 flex flex-col md:flex-row md:items-center gap-5">
+      <div className="mx-auto max-w-wide px-8 lg:px-12 py-7 flex flex-col md:flex-row md:items-center gap-5">
         <span className="shrink-0 inline-block rounded-full bg-page text-accent px-3 py-[3px] text-md font-medium uppercase tracking-[0.08em]">
           The stakes
         </span>

@@ -6,17 +6,17 @@ export default function DashboardVsQueue() {
         <h2 className="mt-4 display title-underline inline-block">
           A dashboard reports. This decides.
         </h2>
-        <p className="mt-6 text-md text-ink-muted">
+        <p className="mt-5 text-md text-ink-muted">
           A dashboard tells you what already happened. A decision view tells you
           what to do next, and for whom.
         </p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
           {/* Dashboard card (light) */}
-          <div className="rounded-2xl border border-line bg-page p-8">
+          <div className="rounded-2xl border border-line bg-page p-6">
             <span className="pill-outline">A dashboard</span>
-            <p className="mt-6 display">Tells you what happened</p>
-            <ul className="mt-6 space-y-3 text-md text-ink-muted">
+            <p className="mt-5 display">Tells you what happened</p>
+            <ul className="mt-5 space-y-3 text-md text-ink-muted">
               <li>Looks at everyone, in aggregate</li>
               <li>Answers a question about the past</li>
               <li>Leaves you to work out the next step</li>
@@ -24,11 +24,11 @@ export default function DashboardVsQueue() {
           </div>
 
           {/* Decision view card (dark) */}
-          <div className="rounded-2xl card-dark p-8">
+          <div className="rounded-2xl card-dark p-6">
             <span className="pill">A decision view</span>
-            <p className="mt-6 display">Tells you what to do</p>
+            <p className="mt-5 display">Tells you what to do</p>
             <ul
-              className="mt-6 space-y-3 text-md"
+              className="mt-5 space-y-3 text-md"
               style={{ color: "rgb(var(--page) / 0.82)" }}
             >
               <li>Looks at one person at a time</li>
