@@ -48,7 +48,7 @@ export default function WhatThisLayerDoes() {
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
-        <p className="eyebrow">06 · What the layer does</p>
+        <p className="eyebrow">05 · What the layer does</p>
         <h2 className="mt-5 display title-underline inline-block">
           Four jobs, applied to each bet
         </h2>

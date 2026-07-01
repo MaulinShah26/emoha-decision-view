@@ -4,8 +4,7 @@ import RenewalProblem from "@/components/RenewalProblem";
 import DashboardVsQueue from "@/components/DashboardVsQueue";
 import MembershipUnit from "@/components/MembershipUnit";
 import Banner from "@/components/Banner";
-import DecisionView from "@/components/DecisionView";
-import HowRiskReads from "@/components/HowRiskReads";
+import DecisionEngine from "@/components/DecisionEngine";
 import WhatThisLayerDoes from "@/components/WhatThisLayerDoes";
 import WhatChanges from "@/components/WhatChanges";
 import Closing from "@/components/Closing";
@@ -27,9 +26,8 @@ export default function Page() {
       </div>
       <Banner />
       <div id="bets" className="scroll-mt-14">
-        <DecisionView />
+        <DecisionEngine />
       </div>
-      <HowRiskReads />
       <WhatThisLayerDoes />
       <div id="changes" className="scroll-mt-14">
         <WhatChanges />

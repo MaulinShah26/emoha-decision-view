@@ -17,7 +17,7 @@ export default function WhatChanges() {
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
-        <p className="eyebrow">07 · What changes for Emoha</p>
+        <p className="eyebrow">06 · What changes for Emoha</p>
         <h2 className="mt-5 display title-underline inline-block">
           What changes in practice
         </h2>
