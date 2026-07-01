@@ -1,4 +1,5 @@
 export type Tier = "Act now" | "Soon" | "Watch" | "Hold";
+export type Readiness = "have" | "confirm";
 
 export interface QueueRow {
   tier: Tier;
@@ -8,11 +9,17 @@ export interface QueueRow {
   owner: string;
 }
 
+export interface DataField {
+  label: string;
+  readiness: Readiness;
+}
+
 export interface Bet {
   id: "cost" | "franchise" | "retention";
   label: string;
   call: string;
   queue: QueueRow[];
+  data: DataField[];
 }
 
 export const dataInputs = [
@@ -34,6 +41,15 @@ export const decisionBets: Bet[] = [
       { tier: "Watch", unit: "Caregiver S. Khan", read: "6 elders, 3 swaps in 30 days", action: "Cap the load, hold referrals", owner: "Ops" },
       { tier: "Hold", unit: "Caregiver T. Rao", read: "Full week, five star, stable", action: "Leave alone", owner: "Auto" },
     ],
+    data: [
+      { label: "Caregiver rosters and shifts", readiness: "have" },
+      { label: "Attendance and visit logs", readiness: "have" },
+      { label: "Pay rates and billed hours", readiness: "have" },
+      { label: "Elder care plan and location", readiness: "have" },
+      { label: "Skill and certification tags", readiness: "confirm" },
+      { label: "Travel time between visits", readiness: "confirm" },
+      { label: "Acuity scoring on the care plan", readiness: "confirm" },
+    ],
   },
   {
     id: "franchise",
@@ -45,6 +61,14 @@ export const decisionBets: Bet[] = [
       { tier: "Watch", unit: "New Tier 2 referral", read: "Low density, like two recent closures", action: "Redirect to a Tier 1 cluster", owner: "Expansion" },
       { tier: "Hold", unit: "Coimbatore", read: "Ahead of the ramp curve", action: "Use as the playbook", owner: "Auto" },
     ],
+    data: [
+      { label: "Franchise launch dates", readiness: "have" },
+      { label: "Revenue and payouts per franchise", readiness: "have" },
+      { label: "Member counts per location", readiness: "have" },
+      { label: "A defined healthy ramp curve", readiness: "confirm" },
+      { label: "Support-contact logs per franchise", readiness: "confirm" },
+      { label: "Local demand and density", readiness: "confirm" },
+    ],
   },
   {
     id: "retention",
@@ -55,6 +79,15 @@ export const decisionBets: Bet[] = [
       { tier: "Soon", unit: "Elder R. Sharma", read: "NRI sponsor silent, two caregiver swaps", action: "Restore continuity, re-engage", owner: "ERM" },
       { tier: "Watch", unit: "Caregiver pattern, 8 elders", read: "Shared one attendant already flagged", action: "Pull attendant, audit accounts", owner: "Nursing" },
       { tier: "Hold", unit: "Elder K. Menon", read: "Engaged, sponsor active, no complaints", action: "Leave alone", owner: "Auto" },
+    ],
+    data: [
+      { label: "Renewal and lapse records", readiness: "have" },
+      { label: "Complaint logs", readiness: "have" },
+      { label: "Caregiver assignment per member", readiness: "have" },
+      { label: "NPS responses", readiness: "have" },
+      { label: "Sponsor app engagement, esp NRI", readiness: "confirm" },
+      { label: "Caregiver-to-churn linkage", readiness: "confirm" },
+      { label: "Reason-coded cancellations", readiness: "confirm" },
     ],
   },
 ];

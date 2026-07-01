@@ -20,6 +20,8 @@ const tierText: Record<Tier, string> = {
 export default function DecisionEngine() {
   const [activeId, setActiveId] = useState(decisionBets[0].id);
   const bet = decisionBets.find((b) => b.id === activeId) ?? decisionBets[0];
+  const have = bet.data.filter((d) => d.readiness === "have");
+  const confirm = bet.data.filter((d) => d.readiness === "confirm");
 
   return (
     <section className="section border-t border-line bg-surface">
@@ -125,6 +127,29 @@ export default function DecisionEngine() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <div>
+              <p className="eyebrow">Almost certainly in your systems</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {have.map((d) => (
+                  <span key={d.label} className="pill">
+                    {d.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="eyebrow">We would confirm together</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {confirm.map((d) => (
+                  <span key={d.label} className="pill-outline">
+                    {d.label}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
 
           <p className="mt-6 text-md text-ink-muted max-w-[760px]">
