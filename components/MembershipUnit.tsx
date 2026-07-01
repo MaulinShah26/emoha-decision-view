@@ -2,9 +2,9 @@ export default function MembershipUnit() {
   return (
     <section className="section border-t border-line">
       <div className="mx-auto max-w-wide px-8 lg:px-12">
-        <p className="eyebrow">03 · The unit is a Membership</p>
+        <p className="eyebrow">03 · Who the customer is</p>
         <h2 className="mt-4 display title-underline inline-block">
-          Every membership is two people
+          Each membership: elder and sponsor
         </h2>
 
         <p className="mt-6 text-md text-ink-muted">

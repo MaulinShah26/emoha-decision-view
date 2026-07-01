@@ -1,6 +1,6 @@
 const links = [
   { href: "#constraint", label: "The constraint" },
-  { href: "#unit", label: "The unit" },
+  { href: "#unit", label: "The customer" },
   { href: "#bets", label: "The three bets" },
   { href: "#changes", label: "What changes" },
 ];
