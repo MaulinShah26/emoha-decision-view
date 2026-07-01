@@ -2,15 +2,15 @@ export default function WhatChanges() {
   const blocks = [
     {
       label: "Business impact",
-      body: "Renewal rate as a tracked metric, not a year-end number. Saves attributed to specific recommended actions. Holdout-proven lift. Rupees retained against rupees at risk, every cycle.",
+      body: "Cost to serve, franchise survival, and renewal tracked as live numbers each cycle. Every recommended action tied to rupees saved or at risk, and proven against a holdout.",
     },
     {
       label: "Team impact",
-      body: "ERMs get a ranked work queue each morning, sorted by where the value is. Doctors get clinically-triggered reviews on the highest-risk elders. Ops gets early flags on franchises that may be affecting renewal. HQ gets a portfolio view of where value is at risk.",
+      body: "Ops gets a ranked queue of caregiver and franchise calls each morning. ERMs get the members worth saving, ranked by value. Doctors get clinically-triggered reviews on the highest-risk elders. HQ gets a portfolio view of where value is at risk across all three bets.",
     },
     {
       label: "How it lands",
-      body: "Built on one slice first, say Comprehensive plan with NRI sponsors. Lift proven against a control group before the layer expands. No new tool for the team to learn. This sits on top of the work they already do.",
+      body: "Built on one bet first, say cost to serve, where the data is cleanest. Lift proven against a control before it expands to the next. No new tool to learn. It sits on top of the work the team already does.",
     },
   ];
 
@@ -19,7 +19,7 @@ export default function WhatChanges() {
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">07 · What changes for Emoha</p>
         <h2 className="mt-5 display title-underline inline-block">
-          What this means in practice
+          What changes in practice
         </h2>
         <div className="mt-7 grid gap-6 md:grid-cols-3">
           {blocks.map((b) => (

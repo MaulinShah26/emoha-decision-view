@@ -4,7 +4,7 @@ export default function DashboardVsQueue() {
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">02 · Reporting vs deciding</p>
         <h2 className="mt-4 display title-underline inline-block">
-          A dashboard reports. This decides.
+          A dashboard reports. A decision view decides.
         </h2>
         <p className="mt-5 text-md text-ink-muted">
           A dashboard tells you what already happened. A decision view tells you

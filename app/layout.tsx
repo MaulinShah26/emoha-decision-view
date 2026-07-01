@@ -10,9 +10,9 @@ const plexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Emoha · Member Retention Decision View",
+  title: "Emoha · Decision view",
   description:
-    "A decision queue for membership renewal at scale. Built around the elder plus sponsor unit, ranked by Value-at-Risk times Risk, with suppression as a first-class output.",
+    "A decision layer for the three calls that drive Emoha's economics: cost to serve, franchise survival, and member retention. Each ranked by value at stake and how actionable, per unit, with an owner.",
   robots: { index: false, follow: false },
 };
 

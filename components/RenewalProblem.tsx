@@ -26,7 +26,7 @@ export default function RenewalProblem() {
       <div className="mx-auto max-w-content px-8 lg:px-12">
         <p className="eyebrow">01 · The real constraint</p>
         <h2 className="mt-4 display title-underline inline-block">
-          Where the money actually leaks
+          A cost problem, not a growth problem
         </h2>
 
         <div className="mt-7 grid gap-4 grid-cols-2 lg:grid-cols-4">

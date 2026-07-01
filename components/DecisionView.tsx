@@ -24,7 +24,7 @@ export default function DecisionView() {
       <div className="mx-auto max-w-wide px-8 lg:px-12">
         <p className="eyebrow">04 · The decision layer · ranked</p>
         <h2 className="mt-5 display title-underline inline-block">
-          Three decisions, ranked from outside
+          The three bets, ranked
         </h2>
         <p className="mt-5 text-md text-ink-muted">
           Not a finished dashboard. This is where I would point the decision

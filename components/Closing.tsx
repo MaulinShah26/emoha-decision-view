@@ -9,7 +9,7 @@ export default function Closing() {
           </p>
           <p className="text-md text-ink-muted lg:pb-2">
             Same data the team already has. New question being asked of it.
-            One cohort first, lift proven against a holdout, then it grows.
+            One bet first, lift proven against a holdout, then it grows.
           </p>
         </div>
       </div>
